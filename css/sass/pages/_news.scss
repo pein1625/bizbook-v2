@@ -1,0 +1,141 @@
+.post {
+  &-title {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  &-title-2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  &-tag {
+    display: inline-block;
+    background-color: $primary;
+    color: $white;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  &-info {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  &-sharing {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__btn {
+      display: flex;
+      border-radius: 4px;
+      overflow: hidden;
+
+      &:not(:last-child) {
+        margin-right: 6px;
+      }
+
+      img {
+        height: 40px;
+      }
+    }
+  }
+
+  &-social {
+    padding: 16px 0;
+    margin: 24px 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+
+  @media (max-width: 767px) {
+    &-title {
+      font-size: 20px;
+    }
+
+    &-title-2 {
+      font-size: 20px;
+    }
+  }
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+.post-tabs {
+  border-bottom: 2px solid $secondary;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+
+  .nav-item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    padding: 0;
+
+    &:hover {
+      color: $secondary;
+    }
+
+    &.active {
+      color: $secondary;
+    }
+  }
+}
+
+.post-author {
+  display: flex;
+  border: 1px solid $border-color;
+  padding: 20px;
+
+  &__avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin-right: 20px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

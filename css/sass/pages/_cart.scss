@@ -1,0 +1,137 @@
+.cart-header {
+  font-size: 18px;
+  border-bottom: 1px solid $border-color;
+  padding: 15px 20px;
+  margin: -20px -15px 20px;
+}
+
+.cart-aside {
+  background-color: $white;
+  border-radius: 4px;
+  @include shadow("");
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  &__header {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: $secondary;
+    border-bottom: 1px solid $border-color;
+    padding: 15px 20px;
+
+    img {
+      margin-right: 6px;
+    }
+  }
+
+  &__block {
+    padding: 20px;
+  }
+
+  &__block + &__block {
+    border-top: 1px solid $border-color;
+  }
+
+  &__link {
+    display: inline-block;
+    color: $secondary;
+    border-bottom: 1px solid $secondary;
+    line-height: 1.2;
+
+    &:hover {
+      color: $secondary;
+      text-decoration: none;
+    }
+  }
+
+  &__state {
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 9px;
+    color: $white;
+    background-color: $secondary;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__progress {
+    position: absolute;
+    display: block;
+    border-radius: 9px;
+    background-color: rgba($primary, 0.5);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  .button {
+    min-width: unset;
+    line-height: 30px;
+    padding: 0 15px;
+  }
+}
+
+.cart-btn {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: $secondary;
+  color: $white;
+  font-weight: 700;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.cart-empty {
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .button {
+      min-width: 230px;
+      font-weight: 400;
+      border-radius: 0;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__btns {
+      flex-direction: column;
+
+      .button {
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container"><a href="#!"><img class="header__banner" src="./images/header-banner.jpg" alt="" /></a>
+                        <div class="header__inner"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__elements">
+                                <!-- for desktop-->
+                                <nav class="h-btns d-none d-xl-flex"><a class="h-btns__btn" href="#!">Kích hoạt khoá học<i class="fa fa-unlock-alt ml-2"></i></a><a class="h-btns__btn h-btns__btn--primary" href="#!"><i class="fa fa-sign-in mr-2"></i>Vào học</a></nav>
+                                <div class="h-dropdown"><a class="h-dropdown__toggle js-header-dropdown" href="#!"><img src="./images/icon-bell.png" alt="" />
+                                        <div class="header__btn-number">2</div>
+                                    </a>
+                                    <div class="h-dropdown__menu"><a class="h-notification media" href="#!"><img class="h-notification__icon" src="./images/icon-notification-1.png" alt="" />
+                                            <div class="media-body">
+                                                <div class="h-notification__text">Từ ngày 26/06/2020, Bizbook áp dụng phí vận chuyển dựa trên khối lượng/ kích thước đóng gói của các sản phẩm trong đơn hàng, và khoảng cách giữa địa chỉ nhận hàng và kho của Tiki/nhà cung cấp/nhà bán hàng. Quý khách có thể kiểm tra phí ở bước "Thanh toán và đặt mua". Chương trình ưu đãi phí giao hàng của sàn Tiki sẽ được cập nhật tại phần "Thông báo của tôi" vào mỗi tháng (áp dụng cho giao hàng tiêu chuẩn).</div>
+                                                <div class="h-notification__time">23/06/2020</div>
+                                            </div>
+                                        </a><a class="h-notification media" href="#!"><img class="h-notification__icon" src="./images/icon-notification-1.png" alt="" />
+                                            <div class="media-body">
+                                                <div class="h-notification__text">Từ ngày 26/06/2020, Bizbook áp dụng phí vận chuyển dựa trên khối lượng/ kích thước đóng gói của các sản phẩm trong đơn hàng, và khoảng cách giữa địa chỉ nhận hàng và kho của Tiki/nhà cung cấp/nhà bán hàng. Quý khách có thể kiểm tra phí ở bước "Thanh toán và đặt mua". Chương trình ưu đãi phí giao hàng của sàn Tiki sẽ được cập nhật tại phần "Thông báo của tôi" vào mỗi tháng (áp dụng cho giao hàng tiêu chuẩn).</div>
+                                                <div class="h-notification__time">23/06/2020</div>
+                                            </div>
+                                        </a><a class="h-notification media" href="#!"><img class="h-notification__icon" src="./images/icon-notification-1.png" alt="" />
+                                            <div class="media-body">
+                                                <div class="h-notification__text">Từ ngày 26/06/2020, Bizbook áp dụng phí vận chuyển dựa trên khối lượng/ kích thước đóng gói của các sản phẩm trong đơn hàng, và khoảng cách giữa địa chỉ nhận hàng và kho của Tiki/nhà cung cấp/nhà bán hàng. Quý khách có thể kiểm tra phí ở bước "Thanh toán và đặt mua". Chương trình ưu đãi phí giao hàng của sàn Tiki sẽ được cập nhật tại phần "Thông báo của tôi" vào mỗi tháng (áp dụng cho giao hàng tiêu chuẩn).</div>
+                                                <div class="h-notification__time">23/06/2020</div>
+                                            </div>
+                                        </a><a class="h-notification media" href="#!"><img class="h-notification__icon" src="./images/icon-notification-1.png" alt="" />
+                                            <div class="media-body">
+                                                <div class="h-notification__text">Từ ngày 26/06/2020, Bizbook áp dụng phí vận chuyển dựa trên khối lượng/ kích thước đóng gói của các sản phẩm trong đơn hàng, và khoảng cách giữa địa chỉ nhận hàng và kho của Tiki/nhà cung cấp/nhà bán hàng. Quý khách có thể kiểm tra phí ở bước "Thanh toán và đặt mua". Chương trình ưu đãi phí giao hàng của sàn Tiki sẽ được cập nhật tại phần "Thông báo của tôi" vào mỗi tháng (áp dụng cho giao hàng tiêu chuẩn).</div>
+                                                <div class="h-notification__time">23/06/2020</div>
+                                            </div>
+                                        </a><a class="h-dropdown__viewall" href="./account-notification.html">Xem tất cả thông báo</a>
+                                    </div>
+                                </div>
+                                <div class="h-dropdown"><a class="h-dropdown__toggle" href="./cart.html"><img src="./images/icon-shopping-cart.png" alt="" />
+                                        <div class="header__btn-number">2</div>
+                                    </a></div>
+                                <div class="h-dropdown"><a class="h-dropdown__toggle w-auto h-auto js-header-dropdown" href="#md-signin" data-toggle="modal"><img class="h-avatar" src="./images/avatar-placeholder.jpg" alt="" /></a>
+                                    <div class="h-dropdown__menu h-dropdown__menu--sm h-dropdown__menu--user"><a class="h-dropdown__item" href="#md-signin" data-toggle="modal"><i class="fa fa-fw fa-sign-in mr-3"></i>Đăng nhập</a><a class="h-dropdown__item" href="#md-signup" data-toggle="modal"><i class="fa fa-fw fa-user-plus mr-3"></i>Tạo tài khoản</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-list-alt mr-3"></i>Vào học</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-key mr-3"></i>Kích hoạt khoá học</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-sign-in mr-3"></i>Cập nhật hồ sơ</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-credit-card mr-3"></i>Ví của bạn</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation js-scroll-fixed">
+                    <div class="navigation__wrapper">
+                        <div class="container">
+                            <div class="navigation__inner">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <!-- for mobile-->
+                                            <nav class="h-btns d-xl-none"><a class="h-btns__btn" href="#!"><i class="fa fa-unlock-alt mr-3"></i>Kích hoạt khoá học</a><a class="h-btns__btn h-btns__btn--primary" href="#!"><i class="fa fa-sign-in mr-3"></i>Vào học</a></nav>
+                                            <div class="n-menu">
+                                                <div class="n-menu__title">Danh mục sản phẩm</div>
+                                                <div class="n-menu__dropdown">
+                                                    <ul class="menu menu-root">
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Doanh Nhân Và Doanh Nghiệp</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 2</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 2</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 2</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 2</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 2</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 2</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 2</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Nghệ Thuật Sống - Tâm Lý</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <div class="menu-mega">
+                                                                <ul class="menu menu-sub">
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Tình Yêu - Hạnh Phúc</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <div class="menu-mega">
+                                                                <ul class="menu menu-sub">
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Sức Khoẻ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <div class="menu-mega">
+                                                                <ul class="menu menu-sub">
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Tài Chính Cá Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <div class="menu-mega">
+                                                                <ul class="menu menu-sub">
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Góc Doanh Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <div class="menu-mega">
+                                                                <ul class="menu menu-sub">
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Báo Chí - Sự Kiện - Người Nổi Tiếng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <div class="menu-mega">
+                                                                <ul class="menu menu-sub">
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Tác Giả</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <div class="menu-mega">
+                                                                <ul class="menu menu-sub">
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./about.html">Về Chúng Tôi</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <div class="menu-mega">
+                                                                <ul class="menu menu-sub">
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                                        <ul class="menu menu-sub menu-sub-2">
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                            <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 3</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <form class="search">
+                                    <input class="form-control" type="text" placeholder="Tìm kiếm thông tin..." />
+                                    <button class="input-group-text"><i class="fa fa-search"></i></button>
+                                </form>
+                                <button class="navbar-toggle d-xl-none js-navbar-toggle ml-10"><span></span><span></span><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Thông tin tài khoản</li>
+                    </ol>
+                    <div class="grid-2 mb-50">
+                        <div class="grid-2__main grid-2__main--custom">
+                            <section class="section-4">
+                                <div class="section-4__header">
+                                    <h2 class="section-4__title">Thông báo của tôi</h2>
+                                    <div class="section-4__subtitle">Quản lý thông tin hồ sơ để bảo mật tài khoản</div>
+                                </div>
+                                <div class="section-4__body">
+                                    <div class="acc-grid">
+                                        <div class="acc-grid__main">
+                                            <div class="acc-form">
+                                                <div class="form-row gutter-20 mb-3">
+                                                    <label class="acc-form__label col-form-label col-md-3">Tên</label>
+                                                    <div class="col-md-9">
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row gutter-20 mb-3">
+                                                    <label class="acc-form__label col-form-label col-md-3">Số điện thoại</label>
+                                                    <div class="col-md-9">
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row gutter-20 mb-3">
+                                                    <label class="acc-form__label col-form-label col-md-3">Email</label>
+                                                    <div class="col-md-9">
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row gutter-20 mb-3">
+                                                    <label class="acc-form__label col-form-label col-md-3">Giới tính</label>
+                                                    <div class="col-md-9">
+                                                        <div class="form-inline">
+                                                            <div class="mr-3 py-1">
+                                                                <label class="radio-styled">
+                                                                    <input class="radio-styled__input" type="radio" name="gender" /><span class="radio-styled__icon"></span>Nam
+                                                                </label>
+                                                            </div>
+                                                            <div class="mr-3 py-1">
+                                                                <label class="radio-styled">
+                                                                    <input class="radio-styled__input" type="radio" name="gender" /><span class="radio-styled__icon"></span>Nữ
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row gutter-20 mb-3">
+                                                    <label class="acc-form__label col-form-label col-md-3">Ngày sinh</label>
+                                                    <div class="col-md-9">
+                                                        <div class="form-row">
+                                                            <div class="col-4">
+                                                                <select class="custom-select">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <select class="custom-select">
+                                                                    <option>Tháng 1</option>
+                                                                    <option>Tháng 2</option>
+                                                                    <option>Tháng 3</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <select class="custom-select">
+                                                                    <option>1991</option>
+                                                                    <option>1992</option>
+                                                                    <option>1993</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row gutter-20 mb-3">
+                                                    <div class="col-md-9 ml-auto">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span>Thay đổi mật khẩu
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row gutter-20">
+                                                    <div class="col-md-9 ml-auto">
+                                                        <button class="button rounded" type="submit">Cập nhật</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-grid__aside">
+                                            <div class="avatar-input">
+                                                <div class="avatar-input__preview"><img class="js-avatar-preview" src="" alt="" /></div>
+                                                <div class="avatar-input__label">
+                                                    <label class="overflow-hidden">
+                                                        <input class="js-avatar-input" type="file" /><span>Chọn ảnh</span>
+                                                    </label>
+                                                </div>
+                                                <div class="avatar-input__text">
+                                                    <div>Dung lượng file tối đa 1 MB</div>
+                                                    <div>Định dạng: .JPEG, .PNG</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="section-4">
+                                <div class="section-4__header">
+                                    <h2 class="section-4__title">Liên kết tài khoản mạng xã hội</h2>
+                                </div>
+                                <div class="section-4__body">
+                                    <div class="acc-social"><img class="mr-3" src="./images/icon-facebook-square.png" alt=""><span class="mr-2">Facebook</span><i class="fa fa-lg fa-check-circle"></i>
+                                        <div class="ml-auto"><span>Đã liên kết</span></div>
+                                    </div>
+                                    <div class="acc-social"><img class="mr-3" src="./images/icon-zalo-square.png" alt=""><span class="mr-2">Zalo</span>
+                                        <div class="ml-auto"><a href="#!">Liên kết</a></div>
+                                    </div>
+                                    <div class="acc-social"><img class="mr-3" src="./images/icon-google-plus-circle.png" alt=""><span class="mr-2">Google</span>
+                                        <div class="ml-auto"><a href="#!">Liên kết</a></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="grid-2__aside">
+                            <div class="media align-items-center mb-3">
+                                <div class="frame-circle mr-20" style="width: 50px"><img src="https://pavatar.qom.vn/655" alt="" />
+                                </div>
+                                <div class="media-body">
+                                    <div class="text-12">Tài khoản của</div>
+                                    <div>Đinh Văn Phú</div>
+                                </div>
+                            </div>
+                            <ul class="acc-menu">
+                                <li class="acc-menu__item"><a class="acc-menu__link active" href="./account-profile.html"><i class="fa fa-lg fa-fw fa-user"></i>Thông tin tài khoản</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="./account-notification.html"><i class="fa fa-lg fa-fw fa-bell"></i>Thông báo của tôi</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="./account-order.html"><i class="fa fa-lg fa-fw fa-book"></i>Quản lý đơn hàng</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="./account-comment.html"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i>Nhận xét sản phẩm đã mua</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="#!"><i class="fa fa-lg fa-fw fa-eye"></i>Sản phẩm bạn đã xem</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="#!"><i class="fa fa-lg fa-fw fa-heart"></i>Sản phẩm yêu thích</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="#!"><i class="fa fa-lg fa-fw fa-shopping-cart"></i> Sản phẩm để mua sau</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Follow-->
+            <section class="follow">
+                <div class="container">
+                    <div class="follow__inner">
+                        <div class="follow__label"><img src="./images/icon-envelope-o.png" alt="" />Đăng ký nhận bản tin</div>
+                        <form class="follow__form" action="">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="email" placeholder="Nhập email của bạn" />
+                                <div class="input-group-append">
+                                    <button class="input-group-text">Đăng ký</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__grid">
+                        <div class="footer__col"><a class="footer__logo" href="#!"><img src="./images/logo.png" alt="logo" /></a>
+                            <div class="footer__content">
+                                <p>BIZBOOKS - SÁCH DÀNH CHO DOANH NHÂN<br />Địa chỉ VP Hà Nội: Số 2- đường Đức Diễn- phường Phúc Diễn- Quận Bắc Từ Liêm-Hà Nội.<br />Địa chỉ công ty : Lô 34E - Khu đấu giá 3ha - Phúc Diễn - Bắc Từ Liêm - Hà Nội.<br />Hotline: 1900 2875 - 0243 789 2666</p>
+                                <p>Chi nhánh: Số 45 đường 8, KP5, Hiệp Bình Chánh, Thủ Đức, TP Hồ Chí Minh.<br />Hotline:(84-4) 37.921.466 - Máy lẻ: 122 - 0866609398<br />Email: cskh@bizbooks.vn</p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="footer__title">Hỗ trợ khách hàng</div>
+                                    <ul class="f-menu">
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng dẫn mua hàng</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Giao nhận và thanh toán</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách đổi trả, bảo hành</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo mật</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="footer__title">Sản phẩm</div>
+                                    <ul class="f-menu">
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Doanh nhân và Doanh nghiệp</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Nghệ thuật sống – Tâm lý</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Tình yêu – Hạnh phúc</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Sức khỏe</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Tài chính cá nhân</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="footer__title">Tin tức - Sự kiện</div>
+                                    <ul class="f-menu">
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Báo chí - Truyền thông</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Kiến thức học tập</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Người nổi tiếng</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Review sách bizbooks</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Dịch vụ</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Tuyển dụng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md mb-4 mb-md-0">
+                                    <div class="footer__title">Kết nối với Bizbooks</div>
+                                    <nav class="f-social"><a class="f-social__item" href="#!"><i class="fa fa-facebook"></i></a><a class="f-social__item" href="#!"><i class="fa fa-youtube-play"></i></a><a class="f-social__item" href="#!"><i class="fa fa-pinterest"></i></a><a class="f-social__item" href="#!"><i class="fa fa-instagram"></i></a><a class="f-social__item" href="#!"><i class="fa fa-tumblr"></i></a><a class="f-social__item" href="#!"><i class="fa fa-twitter"></i></a></nav>
+                                    <div class="footer__title">Tải ứng dụng</div>
+                                    <div class="f-download"><a class="f-download__item" href="#!"><img src="./images/google-play.png" alt="" /></a><a class="f-download__item" href="#!"><img src="./images/app-store.png" alt="" /></a></div>
+                                </div>
+                                <div class="col-md-3 mb-4 mb-md-0">
+                                    <div class="footer__title">Thanh toán</div><img src="./images/payment.jpg" alt="" />
+                                </div>
+                                <div class="col-md">
+                                    <div class="footer__title">Fanpage</div>
+                                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                        <blockquote class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <div class="sticky-btns"><a class="sticky-btns__item" href="#!"><img src="./images/icon-phone-circle.png" alt="" /></a><a class="sticky-btns__item" href="#!"><img src="./images/icon-messenger.png" alt="" /></a><a class="sticky-btns__item js-scroll-to" href="#!" data-target="body"><img src="./images/icon-angle-up-circle.png" alt="" /></a></div>
+            <div class="md-success modal fade" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content md-success__content">
+                        <div class="text-center mb-4"><img src="./images/icon-check-circle-white.png" alt="" width="60" height="60" /></div>
+                        <div class="text-white text-center mb-30">
+                            <div class="text-700 text-uppercase mb-1">Bạn đã đặt hàng thành công</div>
+                            <div>Số đơn hàng: <strong>#400416361</strong></div>
+                            <div>Thời gian giao hàng: <strong>3 - 5 ngày</strong></div>
+                            <div class="text-italic">Bạn sẽ sớm nhận được email xác nhận đơn hàng từ chúng tôi!</div>
+                        </div>
+                        <div class="text-center">
+                            <button class="button button--gradient" type="button" data-dismiss="modal">Tiếp tục mua hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md-cart modal fade" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content md-cart__content">
+                        <div class="text-center mb-10"><img src="./images/icon-check-circle-blue.png" alt="" width="60" height="60" /></div>
+                        <div class="text-center text-secondary text-uppercaset text-700 pb-20 mb-20 border-bottom">ĐÃ THÊM VÀO GIỎ HÀNG THÀNH CÔNG</div>
+                        <div class="product-9 product-9--custom media"><a class="product-9__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                            <div class="media-body">
+                                <div class="product-9__title"><a href="./product-detail.html">Sự Im Lặng Của Bầy Cừu (Tái Bản 2019)</a></div>
+                                <div class="product-9__info">
+                                    <div>- Tác giả: <a href="#!">David Magee</a></div>
+                                    <div>Sách có thể bọc bằng <span class="text-secondary">BookCare</span></div>
+                                </div>
+                                <div class="product-9__btns"><a class="product-9__btn" href="#!">Xoá</a><a class="product-9__btn" href="#!">Để dành mua sau</a></div>
+                            </div>
+                        </div>
+                        <div class="product-9 product-9--custom media"><a class="product-9__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                            <div class="media-body">
+                                <div class="product-9__title"><a href="./product-detail.html">Sự Im Lặng Của Bầy Cừu (Tái Bản 2019)</a></div>
+                                <div class="product-9__info">
+                                    <div>- Tác giả: <a href="#!">David Magee</a></div>
+                                    <div>Sách có thể bọc bằng <span class="text-secondary">BookCare</span></div>
+                                </div>
+                                <div class="product-9__btns"><a class="product-9__btn" href="#!">Xoá</a><a class="product-9__btn" href="#!">Để dành mua sau</a></div>
+                            </div>
+                        </div>
+                        <div class="md-cart__btns">
+                            <button class="button" type="button" data-dismiss="modal">Tiếp tục mua hàng</button><a class="button button--primary" href="./cart.html">Thanh toán</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md-sign modal fade" id="md-signin" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content md-sign__content">
+                        <div class="md-sign__info">
+                            <div class="md-sign__title">Đăng nhập</div>
+                            <div class="md-sign__desc">Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</div>
+                            <div class="text-center"><img class="d-block w-100" src="./images/md-signin-img.jpg" alt="" /></div>
+                        </div>
+                        <form class="md-sign__form" action="#!">
+                            <div class="md-sign__nav"><a class="md-sign__nav-item active" href="#!">Đăng nhập</a><a class="md-sign__nav-item js-switch-modal" href="#md-signup">Tạo tài khoản</a></div>
+                            <div class="md-sign__body">
+                                <div class="form-group form-row">
+                                    <label class="col-form-label col-lg-3">Email / SĐT</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" placeholder="Nhập Email hoặc Số Điện Thoại" />
+                                    </div>
+                                </div>
+                                <div class="form-group form-row">
+                                    <label class="col-form-label col-lg-3">Mật khẩu</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="password" placeholder="Mật khẩu từ 6 đến 32 ký tự" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-9 ml-auto">
+                                        <div class="form-group">Quên mật khẩu? Nhấn vào <a class="text-secondary" href="#!">đây</a></div>
+                                        <div class="form-group">
+                                            <button class="btn btn-secondary btn-block" type="submit">Đăng nhập</button>
+                                        </div>
+                                        <div class="form-group"><a class="social-btn" href="#!">
+                                                <div class="social-btn__icon"><i class="fa fa-fw fa-facebook"></i></div>
+                                                <div class="social-btn__text">Đăng nhập bằng Facebook</div>
+                                            </a></div>
+                                        <div class="form-group"><a class="social-btn social-btn--google" href="#!">
+                                                <div class="social-btn__icon"><i class="fa fa-fw fa-google-plus"></i></div>
+                                                <div class="social-btn__text">Đăng nhập bằng Google</div>
+                                            </a></div>
+                                        <div class="form-group"><a class="social-btn social-btn--zalo" href="#!">
+                                                <div class="social-btn__icon"><img src="./images/icon-zalo-chat-white.png" alt="" /></div>
+                                                <div class="social-btn__text">Đăng nhập bằng Zalo</div>
+                                            </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="md-sign modal fade" id="md-signup" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content md-sign__content">
+                        <div class="md-sign__info">
+                            <div class="md-sign__title">Tạo tài khoản</div>
+                            <div class="md-sign__desc">Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</div>
+                            <div class="text-center"><img class="d-block w-100" src="./images/md-signin-img.jpg" alt="" /></div>
+                        </div>
+                        <form class="md-sign__form" action="#!">
+                            <div class="md-sign__nav"><a class="md-sign__nav-item js-switch-modal" href="#md-signin">Đăng nhập</a><a class="md-sign__nav-item active" href="#!">Tạo tài khoản</a></div>
+                            <div class="md-sign__body">
+                                <div class="form-group form-row">
+                                    <label class="col-form-label col-lg-3">Email / SĐT</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" placeholder="Nhập Email hoặc Số Điện Thoại" />
+                                    </div>
+                                </div>
+                                <div class="form-group form-row">
+                                    <label class="col-form-label col-lg-3">Mật khẩu</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="password" placeholder="Mật khẩu từ 6 đến 32 ký tự" />
+                                    </div>
+                                </div>
+                                <div class="form-group form-row">
+                                    <label class="col-form-label col-lg-3">Nhập lại mật khẩu</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="password" placeholder="Mật khẩu từ 6 đến 32 ký tự" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-9 ml-auto">
+                                        <div class="form-group">Đã có tài khoản? Nhấn vào <a class="text-secondary js-switch-modal" href="#md-signin">đây</a> để đăng nhập</div>
+                                        <div class="form-group">
+                                            <button class="btn btn-secondary btn-block" type="submit">Tạo tài khoản</button>
+                                        </div>
+                                        <div class="form-group"><a class="social-btn" href="#!">
+                                                <div class="social-btn__icon"><i class="fa fa-fw fa-facebook"></i></div>
+                                                <div class="social-btn__text">Đăng ký bằng Facebook</div>
+                                            </a></div>
+                                        <div class="form-group"><a class="social-btn social-btn--google" href="#!">
+                                                <div class="social-btn__icon"><i class="fa fa-fw fa-google-plus"></i></div>
+                                                <div class="social-btn__text">Đăng ký bằng Google</div>
+                                            </a></div>
+                                        <div class="form-group"><a class="social-btn social-btn--zalo" href="#!">
+                                                <div class="social-btn__icon"><img src="./images/icon-zalo-chat-white.png" alt="" /></div>
+                                                <div class="social-btn__text">Đăng ký bằng Zalo</div>
+                                            </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

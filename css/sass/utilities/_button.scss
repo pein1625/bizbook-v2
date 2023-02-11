@@ -1,0 +1,135 @@
+.btn {
+  &-default {
+    border-color: $border-color;
+    background-color: transparent;
+
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+
+  &-rounded {
+    border-radius: 18px;
+  }
+
+  &-shine {
+    @include btn("shine");
+  }
+
+  &-fill {
+    @include btn("fill");
+  }
+
+  &-fill.btn-primary {
+    &::before {
+      background-color: $white;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &-fill.btn-danger {
+    &::before {
+      background-color: $white;
+    }
+
+    &:hover {
+      color: $danger;
+    }
+  }
+
+  &-fill.btn-outline-primary {
+    &::before {
+      background-color: $primary;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $white;
+    }
+  }
+
+  &-fill.btn-outline-danger {
+    &::before {
+      background-color: $danger;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $white;
+    }
+  }
+
+  &-neon-orange {
+    @include btn-neon("orange");
+  }
+
+  &-neon-green {
+    @include btn-neon("green");
+  }
+
+  &-neon-purple {
+    @include btn-neon("purple");
+  }
+
+  &-neon-blue {
+    @include btn-neon("blue");
+  }
+
+  &-neon-dark {
+    @include btn-neon("dark");
+  }
+}
+
+$rounded-list: 8 10 18 20 22 24 25 26 28 30;
+@each $item in $font-size-list {
+  .rounded-#{$item} {
+    border-radius: #{$item}px;
+  }
+}
+
+.button {
+  display: inline-block;
+  min-width: 150px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $white;
+  line-height: 22px;
+  padding: 10px;
+  border-radius: 21px;
+  text-align: center;
+  background: $secondary;
+  border: 0;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    background-color: darken($secondary, 10%);
+  }
+
+  &--gradient {
+    background: linear-gradient(to right, $secondary, $primary);
+    min-width: 220px;
+  }
+
+  &--primary {
+    background-color: $primary;
+
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+
+  @media (max-width: 991px) {
+    line-height: 21px;
+    padding: 7px 20px;
+    min-width: unset;
+
+    &--gradient {
+      min-width: 150px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.promotional-code {
+  .input-group {
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 4px 14px 4px 4px;
+  }
+
+  .form-control {
+    border: 0;
+    padding: 0 16px;
+    height: 30px;
+  }
+
+  .input-group-append {
+    margin-left: 0;
+  }
+
+  .input-group-text {
+    background-color: $secondary;
+    color: $white;
+    border-radius: 15px !important;
+    padding: 0 20px;
+    border: 0;
+
+    &:hover {
+      background-color: darken($secondary, 10%);
+    }
+  }
+}
+
+.warning {
+  align-items: center;
+  background-color: $white;
+  @include shadow("");
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    min-height: 50px;
+    align-self: stretch;
+    background-color: $secondary;
+  }
+}
