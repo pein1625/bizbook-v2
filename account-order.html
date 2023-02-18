@@ -6,8 +6,11 @@
         <meta name="description" content="Description" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./vendor/videojs/video-js.min.css" />
         <link rel="stylesheet" href="./css/app.css" />
         <script src="./js/libs.js" defer="defer"></script>
+        <script src="./vendor/videojs/video.min.js" defer="defer"></script>
+        <script src="./vendor/videojs/videojs-http-streaming.min.js" defer="defer"></script>
         <script src="./js/app.js" defer="defer"></script>
     </head>
     <body>
@@ -21,7 +24,7 @@
                         <div class="header__inner"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
                             <div class="header__elements">
                                 <!-- for desktop-->
-                                <nav class="h-btns d-none d-xl-flex"><a class="h-btns__btn" href="#!">Kích hoạt khoá học<i class="fa fa-unlock-alt ml-2"></i></a><a class="h-btns__btn h-btns__btn--primary" href="#!"><i class="fa fa-sign-in mr-2"></i>Vào học</a></nav>
+                                <nav class="h-btns d-none d-xl-flex"><a class="h-btns__btn" href="./activate.html">Kích hoạt khoá học<i class="fa fa-unlock-alt ml-2"></i></a><a class="h-btns__btn h-btns__btn--primary" href="#!"><i class="fa fa-sign-in mr-2"></i>Vào học</a></nav>
                                 <div class="h-dropdown"><a class="h-dropdown__toggle js-header-dropdown" href="#!"><img src="./images/icon-bell.png" alt="" />
                                         <div class="header__btn-number">2</div>
                                     </a>
@@ -52,7 +55,7 @@
                                         <div class="header__btn-number">2</div>
                                     </a></div>
                                 <div class="h-dropdown"><a class="h-dropdown__toggle w-auto h-auto js-header-dropdown" href="#md-signin" data-toggle="modal"><img class="h-avatar" src="./images/avatar-placeholder.jpg" alt="" /></a>
-                                    <div class="h-dropdown__menu h-dropdown__menu--sm h-dropdown__menu--user"><a class="h-dropdown__item" href="#md-signin" data-toggle="modal"><i class="fa fa-fw fa-sign-in mr-3"></i>Đăng nhập</a><a class="h-dropdown__item" href="#md-signup" data-toggle="modal"><i class="fa fa-fw fa-user-plus mr-3"></i>Tạo tài khoản</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-list-alt mr-3"></i>Vào học</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-key mr-3"></i>Kích hoạt khoá học</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-sign-in mr-3"></i>Cập nhật hồ sơ</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-credit-card mr-3"></i>Ví của bạn</a></div>
+                                    <div class="h-dropdown__menu h-dropdown__menu--sm h-dropdown__menu--user"><a class="h-dropdown__item" href="#md-signin" data-toggle="modal"><i class="fa fa-fw fa-sign-in mr-3"></i>Đăng nhập</a><a class="h-dropdown__item" href="#md-signup" data-toggle="modal"><i class="fa fa-fw fa-user-plus mr-3"></i>Tạo tài khoản</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-list-alt mr-3"></i>Vào học</a><a class="h-dropdown__item" href="./activate.html"><i class="fa fa-fw fa-key mr-3"></i>Kích hoạt khoá học</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-sign-in mr-3"></i>Cập nhật hồ sơ</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-credit-card mr-3"></i>Ví của bạn</a></div>
                                 </div>
                             </div>
                         </div>
@@ -70,12 +73,12 @@
                                         </div>
                                         <div class="navbar__body">
                                             <!-- for mobile-->
-                                            <nav class="h-btns d-xl-none"><a class="h-btns__btn" href="#!"><i class="fa fa-unlock-alt mr-3"></i>Kích hoạt khoá học</a><a class="h-btns__btn h-btns__btn--primary" href="#!"><i class="fa fa-sign-in mr-3"></i>Vào học</a></nav>
+                                            <nav class="h-btns d-xl-none"><a class="h-btns__btn" href="./activate.html"><i class="fa fa-unlock-alt mr-3"></i>Kích hoạt khoá học</a><a class="h-btns__btn h-btns__btn--primary" href="#!"><i class="fa fa-sign-in mr-3"></i>Vào học</a></nav>
                                             <div class="n-menu">
                                                 <div class="n-menu__title">Danh mục sản phẩm</div>
                                                 <div class="n-menu__dropdown">
                                                     <ul class="menu menu-root">
-                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Doanh Nhân Và Doanh Nghiệp</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./course.html">Doanh Nhân Và Doanh Nghiệp</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <ul class="menu menu-sub">
                                                                 <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 2</a>
                                                                 </li>
@@ -93,7 +96,7 @@
                                                                 </li>
                                                             </ul>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Nghệ Thuật Sống - Tâm Lý</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Nghệ Thuật Sống - Tâm Lý</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -155,7 +158,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Tình Yêu - Hạnh Phúc</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Tình Yêu - Hạnh Phúc</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -217,7 +220,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Sức Khoẻ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Sức Khoẻ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -279,7 +282,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Tài Chính Cá Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Tài Chính Cá Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -341,7 +344,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Góc Doanh Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Góc Doanh Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -403,7 +406,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Báo Chí - Sự Kiện - Người Nổi Tiếng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Báo Chí - Sự Kiện - Người Nổi Tiếng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -465,7 +468,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Tác Giả</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Tác Giả</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -692,7 +695,7 @@
                         </div>
                         <div class="grid-2__aside">
                             <div class="media align-items-center mb-3">
-                                <div class="frame-circle mr-20" style="width: 50px"><img src="https://pavatar.qom.vn/613" alt="" />
+                                <div class="frame-circle mr-20" style="width: 50px"><img src="https://pavatar.qom.vn/614" alt="" />
                                 </div>
                                 <div class="media-body">
                                     <div class="text-12">Tài khoản của</div>
@@ -791,7 +794,7 @@
                 </div>
             </footer>
             <!-- modals + sticky widgets-->
-            <div class="sticky-btns"><a class="sticky-btns__item" href="#!"><img src="./images/icon-phone-circle.png" alt="" /></a><a class="sticky-btns__item" href="#!"><img src="./images/icon-messenger.png" alt="" /></a><a class="sticky-btns__item js-scroll-to" href="#!" data-target="body"><img src="./images/icon-angle-up-circle.png" alt="" /></a></div>
+            <div class="sticky-btns"><a class="sticky-btns__item" href="#!"><img src="./images/icon-phone-circle.png" alt="" /></a><a class="sticky-btns__item" href="#!"><img src="./images/icon-zalo.png" alt="" /></a><a class="sticky-btns__item js-scroll-to" href="#!" data-target="body"><img src="./images/icon-angle-up-circle.png" alt="" /></a></div>
             <div class="md-success modal fade" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content md-success__content">

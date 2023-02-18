@@ -577,11 +577,53 @@ $(function () {
 });
 
 $(function () {
-  const video = document.querySelector('.js-video');
+  $('#video-player').bind('contextmenu', function () {
+    return false;
+  });
+  const player = videojs('#video-player');
 
-  if (!video) return;
+  player.on('ended', function () {
+    if (!checkIsVideoAutoplay()) return false;
 
-  video.oncanplay = checkIsVideoAutoplay;
+    const $lessons = $('.js-course-menu').eq(0).find('.js-course-lesson');
+    let flag = false;
+
+    $lessons.each(function () {
+      if (flag) {
+        playVideo($(this));
+        return false;
+      } else if ($(this).hasClass('active')) {
+        flag = true;
+      }
+    });
+  });
+
+  $('.js-course-lesson').on('click', function () {
+    const $el = $(this);
+
+    $(window).scrollTop($('#video-section').offset().top);
+
+    playVideo($el);
+  });
+
+  function playVideo($el) {
+    const src = $el.data('src');
+    const type = $el.data('type');
+    const id = $el.data('id');
+
+    if (!src || !type) return false;
+
+    if ($el.hasClass('active')) {
+      player.play();
+      return false;
+    }
+
+    $('.js-course-lesson.active').removeClass('active');
+    $(`.js-course-lesson[data-id="${id}"]`).addClass('active');
+
+    player.src({ src, type, withCredentials: true });
+    player.play();
+  }
 
   $('.js-video-control').on('click', function (e) {
     e.preventDefault();
@@ -595,17 +637,27 @@ $(function () {
     } else if (type === 'autoplay') {
       $(this).toggleClass('is-autoplay');
 
-      localStorage.isVideoAutoplay = $(this).hasClass('is-autoplay') ? 1 : 0;
+      localStorage.isVideoAutoplay = $(this).hasClass('is-autoplay') ? '1' : 0;
     }
   });
+
+  checkIsVideoAutoplay();
 
   function checkIsVideoAutoplay() {
     if (localStorage.isVideoAutoplay != '1') return false;
 
     $('.js-video-control[data-type="autoplay"]').addClass('is-autoplay');
 
-    video.play();
-
-    console.log('play');
+    return true;
   }
+});
+
+$(function () {
+  $('.course-menu__part-name').on('click', function (e) {
+    e.preventDefault();
+
+    $(this).toggleClass('is-collapsed');
+
+    $(this).siblings('.course-menu__lessons').slideToggle();
+  });
 });
